@@ -1,4 +1,4 @@
-package org.news;
+package org.news.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.news.R;
 
 import java.util.Random;
 
@@ -67,6 +69,9 @@ public class WelcomeActivity extends Activity {
 
             }
         });
+        mTitleText=(TextView) findViewById(R.id.title_text);
+        mVersionText=(TextView) findViewById(R.id.version_text);
+
     }
 
     @Override
