@@ -28,6 +28,7 @@ dependencies {
     //友盟用户反馈
     compile 'com.umeng:fb:5.1.0'
     compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.1'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }
 repositories {
     jcenter()
