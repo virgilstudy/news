@@ -1,6 +1,7 @@
 package org.news.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -61,7 +62,8 @@ public class WelcomeActivity extends Activity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 //open index after animation end
-                Log.d("virgil","animation end");
+                startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+                overridePendingTransition(R.anim.activity_slide_in, R.anim.no_anim);
             }
 
             @Override
@@ -69,8 +71,8 @@ public class WelcomeActivity extends Activity {
 
             }
         });
-        mTitleText=(TextView) findViewById(R.id.title_text);
-        mVersionText=(TextView) findViewById(R.id.version_text);
+        mTitleText = (TextView) findViewById(R.id.title_text);
+        mVersionText = (TextView) findViewById(R.id.version_text);
 
     }
 

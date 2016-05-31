@@ -29,11 +29,13 @@ dependencies {
     compile 'com.umeng:fb:5.1.0'
     compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.1'
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+    compile 'be.webelite:ion-iconview:1.0.4@aar'
+    compile 'com.balysv.materialmenu:material-menu-toolbar:1.5.1'
 }
 repositories {
     jcenter()
     //友盟用户反馈
     maven { url "https://raw.githubusercontent.com/umeng/mvn-repo-umeng/master/repository" }
-
     maven { url 'https://github.com/MarsVard/IonIconView/raw/master/maven' }
 }
